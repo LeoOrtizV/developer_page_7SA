@@ -1,7 +1,20 @@
+/*  */
+/* Creamos una lista de nuestras variables */
+:root{
+    --white:#ffffff;
+    --dark:#212121;
+    --prim:#ffc107;
+    --secun:#0097a7;
+    --gray:#757575;
+}
+
 html{
+    /* Conversión para web */
     font-size: 62.5%;
+    font-family: Krub, Helvetica, sans-serif;
 }
 body{
+    /* 16 px es el estandar  para navegadores */
     font-size: 16px;
 }
 
@@ -13,3 +26,68 @@ body{
 .titulo span{
     font-size: 2rem;
 }
+
+.navegacion-principal{
+    background-color: var(--secun);
+}
+
+.contenedor{
+    max-width: 120rem;
+    /*
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    */
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secun);
+}
+
+.navegacion-principal a{
+    background-color: var(--secun);
+    color: var(--white);
+    /* Quitar subrayado */
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navegacion-principal{
+     /* Agregar relleno */
+
+    /*padding: 1rem;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* justify-content para filas y 
+    align-items para columnas */
+
+    /*justify-content: space-between;*/
+    font-size: 2rem;
+    font-weight: bold;
+}
+/* Si al menos tienen 768px (tablet)*/
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+ 
+}
+.navegacion-principal a:hover{
+    background-color: var(--prim);
+    /* cambia el color del fondo */
+    color: var(--dark)
+}
+
+
+
+
+
+
+
+
+

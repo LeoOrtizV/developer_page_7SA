@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "preload" href="css/styles.css" as="styles">
+    <title>LY Dev</title>
+
+    <!--Siempre va primero normalize-->
+    <link rel = "preload" href="css/normalize.css" as = "style">
+    <link rel = "stylesheet" href="css/normalize.css">
+
+    <link rel= "preload" href="css/styles.css" as="style">
     <link rel = "stylesheet" href="css/styles.css">
-    <title>Document</title>
+
+    <!--Importar Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     
@@ -13,12 +24,14 @@
         <h1 class="titulo">Leonardo Ortiz <span>Developer</span></h1>
     </header>   
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre mí</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
     
     
     <section>
@@ -94,16 +107,19 @@
                 </div>
 
                 <div>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Submit">
                 </div>
             </fieldset>
         </form>
     
     </section>
 
+    <!-- <footer> Sirve para poner contenido hasta el final-->
     <footer>
         <p>Todos los derechos reservados © Leonardo Ortiz Developer</p>
     </footer>
 
 </body>
 </html>
+
+ 
