@@ -83,6 +83,16 @@ body{
     color: var(--dark)
 }
 
+.hero{
+    /* ../ es para regresar una carpeta */
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    /* Cover cubre la imagen con todo el tamaño posible */
+    background-size: cover;
+    /*position: relative;
+    background-position: center;*/
+}
+
 
 
 
