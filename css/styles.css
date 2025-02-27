@@ -12,6 +12,31 @@ html{
     /* Conversión para web */
     font-size: 62.5%;
     font-family: Krub, Helvetica, sans-serif;
+    /*Hack para el modelo de caja */
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    /*hack para modelo de caja */
+    box-sizing: inherit;
+}
+/*Tipografia*/
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3{
+    text-align: center;
 }
 body{
     /* 16 px es el estandar  para navegadores */
@@ -89,11 +114,59 @@ body{
     background-repeat: no-repeat;
     /* Cover cubre la imagen con todo el tamaño posible */
     background-size: cover;
-    /*position: relative;
-    background-position: center;*/
+    position: relative; /*Manipular la posicion, el padre siempre debe ser relative */
+    height: 450px; /*Altura del elemento hero */
 }
 
+.contenido-hero{
+    /*El hijo debe ser siempre absolute */
+    position: absolute; 
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    /*Alinear vertical y horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.contenido-hero p,
+.contenido-hero h2{
+    color: var(--white);
+}
+
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
+
+.boton {
+    background-color: var(--secun);
+    color: var(--white);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    /*Tamaño de letra */
+    font-size: 2rem;
+    /*Quitar subrayado*/
+    text-decoration: none;
+    /*Convertir en mayus*/
+    text-transform: uppercase;
+    /*Negritas*/
+    font-weight: bold;
+    /*Redondear*/
+    border-radius: .5rem;
+    /*Ancho del botón*/
+    width: 90%;
+    /*Alinear el texto al centro*/
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .boton{
+        width: auto;
+    }
+}
 
 
 
