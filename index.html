@@ -94,42 +94,43 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsam assumenda, aspernatur adipisci cum perspiciatis optio eaque laboriosam, consequuntur, voluptatum tempore impedit sint totam. Rem eum impedit laudantium odit iste?</p>
         </section>
     </div>
-    </main>
 
     <section>
         <h2>Contacto</h2>
         
         <!---->
-        <form>
+        <form class="formulario">
             <fieldset>
                 <legend>Llena tus datos para establecer contacto</legend>
-                <div>
-                    <label>Name</label>
-                    <input type="text" placeholder="Your name">
-                </div>
-                <div>
-                    <label>Telephone</label>
-                    <input type="tel" placeholder="Your telephone ">
-                </div>
-                <div>
-                    <label>Email</label>
-                    <input type="email" placeholder="Your email ">
-                </div>
-                <div>
-                    <label>Message</label>
-                    <textarea></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Submit">
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="campo">
+                        <label>Telephone</label>
+                        <input type="tel" placeholder="Your telephone ">
+                    </div>
+                    <div class="campo">
+                        <label>Email</label>
+                        <input type="email" placeholder="Your email ">
+                    </div>
+                    <div class="campo">
+                        <label>Message</label>
+                        <textarea></textarea>
+                    </div>
+                </div><!--.contenedor-campos--> 
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Submit">
                 </div>
             </fieldset>
         </form>
+    </main>
     
     </section>
 
     <!-- <footer> Sirve para poner contenido hasta el final-->
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos reservados © Leonardo Ortiz Developer</p>
     </footer>
 
